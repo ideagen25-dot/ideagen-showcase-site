@@ -23,12 +23,6 @@ const Hero = () => {
       <div className="absolute inset-0 bg-gradient-hero opacity-10"></div>
       
       <div className="container mx-auto px-6 text-center z-10 animate-fade-in">
-        <div className="flex items-center justify-center gap-4 mb-8">
-          <div className="text-2xl md:text-3xl font-bold text-primary tracking-wider">
-            THE IDEAGEN TECHNOLOGIES
-          </div>
-        </div>
-        
         <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
           <span className="text-foreground">Empower your business with</span>
           <br />
