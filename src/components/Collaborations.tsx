@@ -1,47 +1,34 @@
 import { Card, CardContent } from '@/components/ui/card';
-
 const Collaborations = () => {
-  const partners = [
-    { 
-      name: "IIT Madras", 
-      logo: "https://upload.wikimedia.org/wikipedia/en/thumb/6/69/IIT_Madras_Logo.svg/200px-IIT_Madras_Logo.svg.png" 
-    },
-    { 
-      name: "IIT Tirupati", 
-      logo: "/lovable-uploads/c35a68d2-3a0f-46c8-a004-e884787a94fc.png" 
-    },
-    { 
-      name: "IIT Hyderabad", 
-      logo: "/lovable-uploads/6ff08678-01bb-474f-a622-f9041fa9b102.png" 
-    },
-    { 
-      name: "IIT Kharagpur", 
-      logo: "https://upload.wikimedia.org/wikipedia/en/thumb/1/1c/IIT_Kharagpur_Logo.svg/200px-IIT_Kharagpur_Logo.svg.png" 
-    },
-    { 
-      name: "IIIT Hyderabad", 
-      logo: "https://upload.wikimedia.org/wikipedia/en/thumb/3/3a/IIIT_Hyderabad_Logo.svg/200px-IIIT_Hyderabad_Logo.svg.png" 
-    },
-    { 
-      name: "MSME", 
-      logo: "/lovable-uploads/d93e471d-8e84-412b-9cd5-d30cbbacddfa.png" 
-    },
-    { 
-      name: "Microsoft", 
-      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Microsoft_logo_%282012%29.svg/200px-Microsoft_logo_%282012%29.svg.png" 
-    },
-    { 
-      name: "Google", 
-      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/200px-Google_2015_logo.svg.png" 
-    },
-    { 
-      name: "Amazon", 
-      logo: "https://upload.wikimedia.org/commons/thumb/a/a9/Amazon_logo.svg/200px-Amazon_logo.svg.png" 
-    }
-  ];
-
-  return (
-    <section id="collaborations" className="py-20 bg-muted/30">
+  const partners = [{
+    name: "IIT Madras",
+    logo: "https://upload.wikimedia.org/wikipedia/en/thumb/6/69/IIT_Madras_Logo.svg/200px-IIT_Madras_Logo.svg.png"
+  }, {
+    name: "IIT Tirupati",
+    logo: "/lovable-uploads/c35a68d2-3a0f-46c8-a004-e884787a94fc.png"
+  }, {
+    name: "IIT Hyderabad",
+    logo: "/lovable-uploads/6ff08678-01bb-474f-a622-f9041fa9b102.png"
+  }, {
+    name: "IIT Kharagpur",
+    logo: "https://upload.wikimedia.org/wikipedia/en/thumb/1/1c/IIT_Kharagpur_Logo.svg/200px-IIT_Kharagpur_Logo.svg.png"
+  }, {
+    name: "IIIT Hyderabad",
+    logo: "https://upload.wikimedia.org/wikipedia/en/thumb/3/3a/IIIT_Hyderabad_Logo.svg/200px-IIIT_Hyderabad_Logo.svg.png"
+  }, {
+    name: "MSME",
+    logo: "/lovable-uploads/d93e471d-8e84-412b-9cd5-d30cbbacddfa.png"
+  }, {
+    name: "Microsoft",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Microsoft_logo_%282012%29.svg/200px-Microsoft_logo_%282012%29.svg.png"
+  }, {
+    name: "Google",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/200px-Google_2015_logo.svg.png"
+  }, {
+    name: "Amazon",
+    logo: "https://upload.wikimedia.org/commons/thumb/a/a9/Amazon_logo.svg/200px-Amazon_logo.svg.png"
+  }];
+  return <section id="collaborations" className="py-20 bg-muted/30">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
@@ -60,35 +47,18 @@ const Collaborations = () => {
           <div className="relative overflow-hidden">
             <div className="flex animate-scroll space-x-8">
               {/* First set of logos */}
-              {partners.map((partner, index) => (
-                <Card key={index} className="flex-shrink-0 hover:shadow-md transition-shadow">
-                  <CardContent className="p-6 flex flex-col items-center space-y-3 min-w-[180px]">
-                    <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center overflow-hidden border">
-                      <img 
-                        src={partner.logo} 
-                        alt={partner.name}
-                        className="w-12 h-12 object-contain"
-                      />
-                    </div>
-                    <span className="font-medium text-center">{partner.name}</span>
-                  </CardContent>
-                </Card>
-              ))}
+              {partners.map((partner, index) => <Card key={index} className="flex-shrink-0 hover:shadow-md transition-shadow">
+                  
+                </Card>)}
               {/* Duplicate set for seamless loop */}
-              {partners.map((partner, index) => (
-                <Card key={`duplicate-${index}`} className="flex-shrink-0 hover:shadow-md transition-shadow">
+              {partners.map((partner, index) => <Card key={`duplicate-${index}`} className="flex-shrink-0 hover:shadow-md transition-shadow">
                   <CardContent className="p-6 flex flex-col items-center space-y-3 min-w-[180px]">
                     <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center overflow-hidden border">
-                      <img 
-                        src={partner.logo} 
-                        alt={partner.name}
-                        className="w-12 h-12 object-contain"
-                      />
+                      <img src={partner.logo} alt={partner.name} className="w-12 h-12 object-contain" />
                     </div>
                     <span className="font-medium text-center">{partner.name}</span>
                   </CardContent>
-                </Card>
-              ))}
+                </Card>)}
             </div>
           </div>
         </div>
@@ -116,8 +86,6 @@ const Collaborations = () => {
           </Card>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Collaborations;
