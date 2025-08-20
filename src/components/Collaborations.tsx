@@ -7,11 +7,11 @@ const Collaborations = () => {
     name: "IIT Tirupati",
     logo: "/lovable-uploads/c35a68d2-3a0f-46c8-a004-e884787a94fc.png"
   }, {
+    name: "IIT Hyderabad",
+    logo: "/lovable-uploads/6ff08678-01bb-474f-a622-f9041fa9b102.png"
+  }, {
     name: "IIT Kharagpur",
     logo: "https://upload.wikimedia.org/wikipedia/en/thumb/1/1c/IIT_Kharagpur_Logo.svg/200px-IIT_Kharagpur_Logo.svg.png"
-  }, {
-    name: "IIIT Hyderabad",
-    logo: "https://upload.wikimedia.org/wikipedia/en/thumb/3/3a/IIIT_Hyderabad_Logo.svg/200px-IIIT_Hyderabad_Logo.svg.png"
   }, {
     name: "MSME",
     logo: "/lovable-uploads/d93e471d-8e84-412b-9cd5-d30cbbacddfa.png"
