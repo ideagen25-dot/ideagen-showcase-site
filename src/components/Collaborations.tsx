@@ -8,19 +8,23 @@ const Collaborations = () => {
     },
     { 
       name: "IIT Tirupati", 
-      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Indian_Institute_of_Technology_Tirupati_logo.png/200px-Indian_Institute_of_Technology_Tirupati_logo.png" 
+      logo: "/lovable-uploads/c35a68d2-3a0f-46c8-a004-e884787a94fc.png" 
+    },
+    { 
+      name: "IIT Hyderabad", 
+      logo: "/lovable-uploads/6ff08678-01bb-474f-a622-f9041fa9b102.png" 
     },
     { 
       name: "IIT Kharagpur", 
       logo: "https://upload.wikimedia.org/wikipedia/en/thumb/1/1c/IIT_Kharagpur_Logo.svg/200px-IIT_Kharagpur_Logo.svg.png" 
     },
     { 
-      name: "NIT Warangal", 
-      logo: "https://upload.wikimedia.org/wikipedia/en/thumb/f/f5/Indian_Institute_of_Technology_Guwahati_Logo.svg/200px-Indian_Institute_of_Technology_Guwahati_Logo.svg.png" 
-    },
-    { 
       name: "IIIT Hyderabad", 
       logo: "https://upload.wikimedia.org/wikipedia/en/thumb/3/3a/IIIT_Hyderabad_Logo.svg/200px-IIIT_Hyderabad_Logo.svg.png" 
+    },
+    { 
+      name: "MSME", 
+      logo: "/lovable-uploads/d93e471d-8e84-412b-9cd5-d30cbbacddfa.png" 
     },
     { 
       name: "Microsoft", 
@@ -32,7 +36,7 @@ const Collaborations = () => {
     },
     { 
       name: "Amazon", 
-      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/200px-Amazon_logo.svg.png" 
+      logo: "https://upload.wikimedia.org/commons/thumb/a/a9/Amazon_logo.svg/200px-Amazon_logo.svg.png" 
     }
   ];
 

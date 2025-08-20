@@ -66,12 +66,6 @@ const Services = () => {
                     </li>
                   ))}
                 </ul>
-                <Button 
-                  variant="outline" 
-                  className="w-full group-hover:bg-primary group-hover:text-white transition-colors"
-                >
-                  Learn More
-                </Button>
               </CardContent>
             </Card>
           ))}

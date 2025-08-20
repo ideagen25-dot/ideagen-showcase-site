@@ -148,9 +148,15 @@ Message: ${formData.message}`);
               <CardContent className="p-6">
                 <h3 className="font-semibold mb-4">Follow Us</h3>
                 <div className="flex space-x-4">
-                  <Button variant="outline" size="icon" className="hover:bg-primary hover:text-white">
-                    <Linkedin className="w-4 h-4" />
-                  </Button>
+                  <a 
+                    href="https://www.linkedin.com/company/the-idea-gen-technologies/posts/?feedView=all" 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Button variant="outline" size="icon" className="hover:bg-primary hover:text-white">
+                      <Linkedin className="w-4 h-4" />
+                    </Button>
+                  </a>
                   <Button variant="outline" size="icon" className="hover:bg-primary hover:text-white">
                     <Twitter className="w-4 h-4" />
                   </Button>

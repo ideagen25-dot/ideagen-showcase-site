@@ -70,60 +70,40 @@ const Workshops = () => {
           <div className="relative overflow-hidden">
             <div className="flex animate-scroll space-x-6">
               {/* First set of workshops */}
-              {workshops.map((workshop, index) => (
-                <Card key={index} className="flex-shrink-0 hover:shadow-lg transition-shadow min-w-[300px]">
-                  <CardContent className="p-0">
-                    <div className="relative">
-                      <img 
-                        src={workshop.image} 
-                        alt={workshop.title}
-                        className="w-full h-48 object-cover rounded-t-lg"
-                      />
-                      <div className="absolute top-4 right-4 bg-primary/90 text-white px-3 py-1 rounded-full text-sm">
-                        {workshop.date}
-                      </div>
-                    </div>
-                    <div className="p-4">
-                      <h4 className="font-semibold mb-2">{workshop.title}</h4>
-                      <div className="flex items-center text-sm text-muted-foreground mb-2">
-                        <MapPin className="w-4 h-4 mr-1" />
-                        {workshop.institution}
-                      </div>
-                      <div className="flex items-center text-sm text-muted-foreground">
-                        <Users className="w-4 h-4 mr-1" />
-                        {workshop.participants} participants
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
+              {[
+                "/lovable-uploads/78403021-7dbd-4f1d-ab34-f857c13ec4cc.png",
+                "/lovable-uploads/a2ce7e8f-17b5-45e9-a1c5-88e303740fce.png", 
+                "/lovable-uploads/b2d4bbd2-8c99-4ae1-ab5b-e9047238eb8e.png",
+                "/lovable-uploads/63418c2d-2051-4ae9-a09d-4aa6d464f426.png",
+                "/lovable-uploads/829c504c-783b-4b4f-b135-3f256e844c44.png",
+                "/lovable-uploads/0d928025-c304-4c20-a2b6-0e67f909b505.png",
+                "/lovable-uploads/a6c236b6-0cb1-423e-a694-27166b6e7f61.png"
+              ].map((image, index) => (
+                <div key={index} className="flex-shrink-0 min-w-[300px] h-48">
+                  <img 
+                    src={image}
+                    alt={`Workshop ${index + 1}`}
+                    className="w-full h-full object-cover rounded-lg shadow-lg"
+                  />
+                </div>
               ))}
               {/* Duplicate set for seamless loop */}
-              {workshops.map((workshop, index) => (
-                <Card key={`duplicate-${index}`} className="flex-shrink-0 hover:shadow-lg transition-shadow min-w-[300px]">
-                  <CardContent className="p-0">
-                    <div className="relative">
-                      <img 
-                        src={workshop.image} 
-                        alt={workshop.title}
-                        className="w-full h-48 object-cover rounded-t-lg"
-                      />
-                      <div className="absolute top-4 right-4 bg-primary/90 text-white px-3 py-1 rounded-full text-sm">
-                        {workshop.date}
-                      </div>
-                    </div>
-                    <div className="p-4">
-                      <h4 className="font-semibold mb-2">{workshop.title}</h4>
-                      <div className="flex items-center text-sm text-muted-foreground mb-2">
-                        <MapPin className="w-4 h-4 mr-1" />
-                        {workshop.institution}
-                      </div>
-                      <div className="flex items-center text-sm text-muted-foreground">
-                        <Users className="w-4 h-4 mr-1" />
-                        {workshop.participants} participants
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
+              {[
+                "/lovable-uploads/78403021-7dbd-4f1d-ab34-f857c13ec4cc.png",
+                "/lovable-uploads/a2ce7e8f-17b5-45e9-a1c5-88e303740fce.png", 
+                "/lovable-uploads/b2d4bbd2-8c99-4ae1-ab5b-e9047238eb8e.png",
+                "/lovable-uploads/63418c2d-2051-4ae9-a09d-4aa6d464f426.png",
+                "/lovable-uploads/829c504c-783b-4b4f-b135-3f256e844c44.png",
+                "/lovable-uploads/0d928025-c304-4c20-a2b6-0e67f909b505.png",
+                "/lovable-uploads/a6c236b6-0cb1-423e-a694-27166b6e7f61.png"
+              ].map((image, index) => (
+                <div key={`duplicate-${index}`} className="flex-shrink-0 min-w-[300px] h-48">
+                  <img 
+                    src={image}
+                    alt={`Workshop ${index + 1}`}
+                    className="w-full h-full object-cover rounded-lg shadow-lg"
+                  />
+                </div>
               ))}
             </div>
           </div>

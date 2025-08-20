@@ -28,20 +28,20 @@ const Hero = () => {
           <br />
           <span className="text-secondary italic">strategic</span>{' '}
           <span className="text-foreground">IT solutions</span>
-          <br />
-          <div className="h-20 overflow-hidden relative">
-            <div 
-              className="transition-transform duration-500 ease-in-out"
-              style={{ transform: `translateY(-${currentWordIndex * 80}px)` }}
-            >
-              {words.map((word, index) => (
-                <div key={index} className="h-20 flex items-center">
-                  <span className="text-primary">for {word}</span>
-                </div>
-              ))}
-            </div>
-          </div>
         </h1>
+        
+        <div className="h-20 overflow-hidden relative mb-8">
+          <div 
+            className="transition-transform duration-500 ease-in-out"
+            style={{ transform: `translateY(-${currentWordIndex * 80}px)` }}
+          >
+            {words.map((word, index) => (
+              <div key={index} className="h-20 flex items-center justify-center">
+                <span className="text-primary text-4xl md:text-6xl font-bold">for {word}</span>
+              </div>
+            ))}
+          </div>
+        </div>
         
         <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-4xl mx-auto">
           Delivering cutting-edge workshops, internships, and IT solutions to institutions and enterprises.
