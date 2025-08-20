@@ -7,9 +7,6 @@ const Collaborations = () => {
     name: "IIT Tirupati",
     logo: "/lovable-uploads/c35a68d2-3a0f-46c8-a004-e884787a94fc.png"
   }, {
-    name: "IIT Hyderabad",
-    logo: "/lovable-uploads/6ff08678-01bb-474f-a622-f9041fa9b102.png"
-  }, {
     name: "IIT Kharagpur",
     logo: "https://upload.wikimedia.org/wikipedia/en/thumb/1/1c/IIT_Kharagpur_Logo.svg/200px-IIT_Kharagpur_Logo.svg.png"
   }, {
@@ -48,7 +45,12 @@ const Collaborations = () => {
             <div className="flex animate-scroll space-x-8">
               {/* First set of logos */}
               {partners.map((partner, index) => <Card key={index} className="flex-shrink-0 hover:shadow-md transition-shadow">
-                  
+                  <CardContent className="p-6 flex flex-col items-center space-y-3 min-w-[180px]">
+                    <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center overflow-hidden border">
+                      <img src={partner.logo} alt={partner.name} className="w-12 h-12 object-contain" />
+                    </div>
+                    <span className="font-medium text-center">{partner.name}</span>
+                  </CardContent>
                 </Card>)}
               {/* Duplicate set for seamless loop */}
               {partners.map((partner, index) => <Card key={`duplicate-${index}`} className="flex-shrink-0 hover:shadow-md transition-shadow">

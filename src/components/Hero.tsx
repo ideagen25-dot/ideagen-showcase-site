@@ -1,7 +1,7 @@
 import { Button } from '@/components/ui/button';
 import { ChevronDown } from 'lucide-react';
 import { useEffect, useState } from 'react';
-import msmeImage from '@/assets/msme-logo.png';
+
 
 const Hero = () => {
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
@@ -65,7 +65,7 @@ const Hero = () => {
           </div>
           <div className="w-px h-12 bg-border"></div>
           <div className="flex items-center space-x-3">
-            <img src={msmeImage} alt="MSME Approved" className="w-16 h-16 object-contain" />
+            <img src="/lovable-uploads/d93e471d-8e84-412b-9cd5-d30cbbacddfa.png" alt="MSME Approved" className="w-16 h-16 object-contain" />
             <div>
               <div className="font-semibold text-secondary">MSME</div>
               <div className="text-sm text-muted-foreground">Approved</div>
