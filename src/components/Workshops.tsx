@@ -1,8 +1,34 @@
 import { Card, CardContent } from '@/components/ui/card';
+import workshop1 from '@/assets/workshop-1.jpg';
+import workshop2 from '@/assets/workshop-2.jpg';
+import workshop3 from '@/assets/workshop-3.jpg';
 import { Badge } from '@/components/ui/badge';
-import { MapPin, Calendar, Users } from 'lucide-react';
 
 const Workshops = () => {
+  const workshops = [
+    {
+      image: workshop1,
+      title: "Cloud Computing Workshop",
+      institution: "IIT Madras",
+      date: "March 2024",
+      participants: 120
+    },
+    {
+      image: workshop2,
+      title: "Cybersecurity Bootcamp",
+      institution: "IIT Tirupati",
+      date: "February 2024",
+      participants: 85
+    },
+    {
+      image: workshop3,
+      title: "AI/ML Workshop",
+      institution: "NIT Warangal",
+      date: "January 2024",
+      participants: 150
+    }
+  ];
+
   const institutions = [
     "IIT Madras",
     "IIT Tirupati", 
@@ -34,6 +60,72 @@ const Workshops = () => {
             We've successfully conducted cutting-edge technology workshops at premier institutions, 
             empowering thousands of students with industry-relevant skills.
           </p>
+        </div>
+
+        <div className="mb-12">
+          <h3 className="text-2xl font-semibold mb-8 text-center">Recent Workshop Gallery</h3>
+          
+          {/* Workshop Timeline */}
+          <div className="relative overflow-hidden">
+            <div className="flex animate-scroll space-x-6">
+              {/* First set of workshops */}
+              {workshops.map((workshop, index) => (
+                <Card key={index} className="flex-shrink-0 hover:shadow-lg transition-shadow min-w-[300px]">
+                  <CardContent className="p-0">
+                    <div className="relative">
+                      <img 
+                        src={workshop.image} 
+                        alt={workshop.title}
+                        className="w-full h-48 object-cover rounded-t-lg"
+                      />
+                      <div className="absolute top-4 right-4 bg-primary/90 text-white px-3 py-1 rounded-full text-sm">
+                        {workshop.date}
+                      </div>
+                    </div>
+                    <div className="p-4">
+                      <h4 className="font-semibold mb-2">{workshop.title}</h4>
+                      <div className="flex items-center text-sm text-muted-foreground mb-2">
+                        <MapPin className="w-4 h-4 mr-1" />
+                        {workshop.institution}
+                      </div>
+                      <div className="flex items-center text-sm text-muted-foreground">
+                        <Users className="w-4 h-4 mr-1" />
+                        {workshop.participants} participants
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
+              {/* Duplicate set for seamless loop */}
+              {workshops.map((workshop, index) => (
+                <Card key={`duplicate-${index}`} className="flex-shrink-0 hover:shadow-lg transition-shadow min-w-[300px]">
+                  <CardContent className="p-0">
+                    <div className="relative">
+                      <img 
+                        src={workshop.image} 
+                        alt={workshop.title}
+                        className="w-full h-48 object-cover rounded-t-lg"
+                      />
+                      <div className="absolute top-4 right-4 bg-primary/90 text-white px-3 py-1 rounded-full text-sm">
+                        {workshop.date}
+                      </div>
+                    </div>
+                    <div className="p-4">
+                      <h4 className="font-semibold mb-2">{workshop.title}</h4>
+                      <div className="flex items-center text-sm text-muted-foreground mb-2">
+                        <MapPin className="w-4 h-4 mr-1" />
+                        {workshop.institution}
+                      </div>
+                      <div className="flex items-center text-sm text-muted-foreground">
+                        <Users className="w-4 h-4 mr-1" />
+                        {workshop.participants} participants
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">

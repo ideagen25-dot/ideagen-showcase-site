@@ -115,7 +115,7 @@ const Internships = () => {
 
               <Button 
                 className="w-full mt-6 bg-gradient-primary text-white hover:opacity-90"
-                onClick={() => window.open('mailto:contact@ideagentechnologies.com', '_blank')}
+                onClick={() => window.open('mailto:contactsupport@theideagen.com', '_blank')}
               >
                 <Mail className="w-4 h-4 mr-2" />
                 Apply Now

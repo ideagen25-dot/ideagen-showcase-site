@@ -1,16 +1,39 @@
 import { Card, CardContent } from '@/components/ui/card';
 
 const Collaborations = () => {
-  // Mock partner logos - in production, you'd replace these with actual partner logos
   const partners = [
-    { name: "IIT Madras", logo: "https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=100&h=100&fit=crop&crop=center" },
-    { name: "IIT Tirupati", logo: "https://images.unsplash.com/photo-1562774053-701939374585?w=100&h=100&fit=crop&crop=center" },
-    { name: "IIT Kharagpur", logo: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=100&h=100&fit=crop&crop=center" },
-    { name: "SVRMC Nagarm", logo: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=100&h=100&fit=crop&crop=center" },
-    { name: "NIT Warangal", logo: "https://images.unsplash.com/photo-1574267432553-4b4628081c31?w=100&h=100&fit=crop&crop=center" },
-    { name: "IIIT Hyderabad", logo: "https://images.unsplash.com/photo-1562774053-01a0dd3d9439?w=100&h=100&fit=crop&crop=center" },
-    { name: "TechCorp", logo: "https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=100&h=100&fit=crop&crop=center" },
-    { name: "InnovateX", logo: "https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?w=100&h=100&fit=crop&crop=center" }
+    { 
+      name: "IIT Madras", 
+      logo: "https://upload.wikimedia.org/wikipedia/en/thumb/6/69/IIT_Madras_Logo.svg/200px-IIT_Madras_Logo.svg.png" 
+    },
+    { 
+      name: "IIT Tirupati", 
+      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Indian_Institute_of_Technology_Tirupati_logo.png/200px-Indian_Institute_of_Technology_Tirupati_logo.png" 
+    },
+    { 
+      name: "IIT Kharagpur", 
+      logo: "https://upload.wikimedia.org/wikipedia/en/thumb/1/1c/IIT_Kharagpur_Logo.svg/200px-IIT_Kharagpur_Logo.svg.png" 
+    },
+    { 
+      name: "NIT Warangal", 
+      logo: "https://upload.wikimedia.org/wikipedia/en/thumb/f/f5/Indian_Institute_of_Technology_Guwahati_Logo.svg/200px-Indian_Institute_of_Technology_Guwahati_Logo.svg.png" 
+    },
+    { 
+      name: "IIIT Hyderabad", 
+      logo: "https://upload.wikimedia.org/wikipedia/en/thumb/3/3a/IIIT_Hyderabad_Logo.svg/200px-IIIT_Hyderabad_Logo.svg.png" 
+    },
+    { 
+      name: "Microsoft", 
+      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Microsoft_logo_%282012%29.svg/200px-Microsoft_logo_%282012%29.svg.png" 
+    },
+    { 
+      name: "Google", 
+      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/200px-Google_2015_logo.svg.png" 
+    },
+    { 
+      name: "Amazon", 
+      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/200px-Amazon_logo.svg.png" 
+    }
   ];
 
   return (
@@ -36,11 +59,11 @@ const Collaborations = () => {
               {partners.map((partner, index) => (
                 <Card key={index} className="flex-shrink-0 hover:shadow-md transition-shadow">
                   <CardContent className="p-6 flex flex-col items-center space-y-3 min-w-[180px]">
-                    <div className="w-16 h-16 bg-muted rounded-full flex items-center justify-center overflow-hidden">
+                    <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center overflow-hidden border">
                       <img 
                         src={partner.logo} 
                         alt={partner.name}
-                        className="w-full h-full object-cover"
+                        className="w-12 h-12 object-contain"
                       />
                     </div>
                     <span className="font-medium text-center">{partner.name}</span>
@@ -51,11 +74,11 @@ const Collaborations = () => {
               {partners.map((partner, index) => (
                 <Card key={`duplicate-${index}`} className="flex-shrink-0 hover:shadow-md transition-shadow">
                   <CardContent className="p-6 flex flex-col items-center space-y-3 min-w-[180px]">
-                    <div className="w-16 h-16 bg-muted rounded-full flex items-center justify-center overflow-hidden">
+                    <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center overflow-hidden border">
                       <img 
                         src={partner.logo} 
                         alt={partner.name}
-                        className="w-full h-full object-cover"
+                        className="w-12 h-12 object-contain"
                       />
                     </div>
                     <span className="font-medium text-center">{partner.name}</span>

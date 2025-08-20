@@ -1,7 +1,18 @@
 import { Button } from '@/components/ui/button';
 import { ChevronDown } from 'lucide-react';
+import msmeImage from '@/assets/msme-logo.png';
 
 const Hero = () => {
+  const [currentWordIndex, setCurrentWordIndex] = useState(0);
+  const words = ["Students", "Institutions", "Companies", "Innovation", "Future"];
+  
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentWordIndex((prev) => (prev + 1) % words.length);
+    }, 2000);
+    return () => clearInterval(interval);
+  }, []);
+
   const scrollToContact = () => {
     document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
   };
@@ -12,42 +23,51 @@ const Hero = () => {
       
       <div className="container mx-auto px-6 text-center z-10 animate-fade-in">
         <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-          <span className="text-foreground">Empowering</span>{' '}
-          <span className="text-primary">Students.</span>
+          <span className="text-foreground">Empower your business with</span>
           <br />
-          <span className="text-foreground">Enabling</span>{' '}
-          <span className="text-secondary">Institutions.</span>
+          <span className="text-secondary italic">strategic</span>{' '}
+          <span className="text-foreground">IT solutions</span>
           <br />
-          <span className="text-foreground">Engaging</span>{' '}
-          <span className="text-primary">Companies.</span>
+          <div className="h-20 overflow-hidden relative">
+            <div 
+              className="transition-transform duration-500 ease-in-out"
+              style={{ transform: `translateY(-${currentWordIndex * 80}px)` }}
+            >
+              {words.map((word, index) => (
+                <div key={index} className="h-20 flex items-center">
+                  <span className="text-primary">for {word}</span>
+                </div>
+              ))}
+            </div>
+          </div>
         </h1>
         
         <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-4xl mx-auto">
           Delivering cutting-edge workshops, internships, and IT solutions to institutions and enterprises.
         </p>
         
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
-          <Button 
-            onClick={scrollToContact}
-            size="lg"
-            className="bg-gradient-primary text-white hover:opacity-90 transition-opacity px-8 py-4 text-lg"
-          >
-            Get in Touch
-          </Button>
-          
-          <div className="flex items-center space-x-4 text-sm text-muted-foreground">
-            <div className="flex items-center space-x-2">
-              <div className="w-12 h-8 bg-primary/10 rounded flex items-center justify-center">
-                <span className="text-primary font-semibold text-xs">MSME</span>
-              </div>
-              <span>Approved</span>
+        <Button 
+          onClick={scrollToContact}
+          size="lg"
+          className="bg-gradient-primary text-white hover:opacity-90 transition-opacity px-8 py-4 text-lg mb-16"
+        >
+          Talk To Our Experts
+        </Button>
+        
+        <div className="flex justify-center items-center space-x-8 mb-16">
+          <div className="flex items-center space-x-3">
+            <img src="/aicte-logo.png" alt="AICTE Approved" className="w-16 h-16 object-contain" />
+            <div>
+              <div className="font-semibold text-primary">AICTE</div>
+              <div className="text-sm text-muted-foreground">Approved</div>
             </div>
-            <div className="w-px h-6 bg-border"></div>
-            <div className="flex items-center space-x-2">
-              <div className="w-12 h-8 bg-secondary/10 rounded flex items-center justify-center">
-                <span className="text-secondary font-semibold text-xs">AICTE</span>
-              </div>
-              <span>Approved</span>
+          </div>
+          <div className="w-px h-12 bg-border"></div>
+          <div className="flex items-center space-x-3">
+            <img src={msmeImage} alt="MSME Approved" className="w-16 h-16 object-contain" />
+            <div>
+              <div className="font-semibold text-secondary">MSME</div>
+              <div className="text-sm text-muted-foreground">Approved</div>
             </div>
           </div>
         </div>

@@ -18,9 +18,17 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    const subject = encodeURIComponent(`Contact Form Submission from ${formData.name}`);
+    const body = encodeURIComponent(`Name: ${formData.name}
+Email: ${formData.email}
+Phone: ${formData.phone}
+Message: ${formData.message}`);
+    
+    window.open(`mailto:contactsupport@theideagen.com?subject=${subject}&body=${body}`, '_self');
+    
     toast({
-      title: "Message Sent!",
-      description: "Thank you for your interest. We'll get back to you soon.",
+      title: "Redirecting to Email!",
+      description: "Your default email client will open with the message pre-filled.",
     });
     setFormData({ name: '', email: '', phone: '', message: '' });
   };
@@ -121,15 +129,7 @@ const Contact = () => {
                     <Mail className="w-5 h-5 text-primary" />
                     <div>
                       <div className="font-medium">Email</div>
-                      <div className="text-sm text-muted-foreground">contact@ideagentechnologies.com</div>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-center space-x-3">
-                    <Phone className="w-5 h-5 text-primary" />
-                    <div>
-                      <div className="font-medium">Phone</div>
-                      <div className="text-sm text-muted-foreground">+91 XXXXX XXXXX</div>
+                      <div className="text-sm text-muted-foreground">contactsupport@theideagen.com</div>
                     </div>
                   </div>
                   
@@ -137,7 +137,7 @@ const Contact = () => {
                     <MapPin className="w-5 h-5 text-primary" />
                     <div>
                       <div className="font-medium">Location</div>
-                      <div className="text-sm text-muted-foreground">Hyderabad, Telangana, India</div>
+                      <div className="text-sm text-muted-foreground">Tirupati Maruthi Nagar, Andhra Pradesh, India</div>
                     </div>
                   </div>
                 </div>
@@ -161,17 +161,6 @@ const Contact = () => {
               </CardContent>
             </Card>
 
-            <Card className="bg-gradient-primary text-white">
-              <CardContent className="p-6">
-                <h3 className="font-semibold mb-2">Ready to Get Started?</h3>
-                <p className="text-sm mb-4 opacity-90">
-                  Join thousands of students and professionals who have transformed their careers with us.
-                </p>
-                <Button variant="secondary" className="w-full">
-                  Schedule a Call
-                </Button>
-              </CardContent>
-            </Card>
           </div>
         </div>
       </div>
