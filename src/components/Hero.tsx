@@ -1,5 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { ChevronDown } from 'lucide-react';
+import { useEffect, useState } from 'react';
 import msmeImage from '@/assets/msme-logo.png';
 
 const Hero = () => {

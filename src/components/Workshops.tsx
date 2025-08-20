@@ -1,8 +1,9 @@
 import { Card, CardContent } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
+import { MapPin, Calendar, Users } from 'lucide-react';
 import workshop1 from '@/assets/workshop-1.jpg';
 import workshop2 from '@/assets/workshop-2.jpg';
 import workshop3 from '@/assets/workshop-3.jpg';
-import { Badge } from '@/components/ui/badge';
 
 const Workshops = () => {
   const workshops = [
