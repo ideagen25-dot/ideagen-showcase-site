@@ -15,12 +15,6 @@ const Collaborations = () => {
   }, {
     name: "Microsoft",
     logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Microsoft_logo_%282012%29.svg/200px-Microsoft_logo_%282012%29.svg.png"
-  }, {
-    name: "Google",
-    logo: "https://upload.wikimedia.org/commons/thumb/2/2f/Google_2015_logo.svg/200px-Google_2015_logo.svg.png"
-  }, {
-    name: "Amazon",
-    logo: "https://upload.wikimedia.org/commons/thumb/a/a9/Amazon_logo.svg/200px-Amazon_logo.svg.png"
   }];
   return <section id="collaborations" className="py-20 bg-muted/30">
       <div className="container mx-auto px-6">
