@@ -7,9 +7,6 @@ const Collaborations = () => {
     name: "IIT Tirupati",
     logo: "/lovable-uploads/c35a68d2-3a0f-46c8-a004-e884787a94fc.png"
   }, {
-    name: "IIT Hyderabad",
-    logo: "/lovable-uploads/6ff08678-01bb-474f-a622-f9041fa9b102.png"
-  }, {
     name: "IIT Kharagpur",
     logo: "https://upload.wikimedia.org/wikipedia/en/thumb/1/1c/IIT_Kharagpur_Logo.svg/200px-IIT_Kharagpur_Logo.svg.png"
   }, {
@@ -20,7 +17,7 @@ const Collaborations = () => {
     logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Microsoft_logo_%282012%29.svg/200px-Microsoft_logo_%282012%29.svg.png"
   }, {
     name: "Google",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/200px-Google_2015_logo.svg.png"
+    logo: "https://upload.wikimedia.org/commons/thumb/2/2f/Google_2015_logo.svg/200px-Google_2015_logo.svg.png"
   }, {
     name: "Amazon",
     logo: "https://upload.wikimedia.org/commons/thumb/a/a9/Amazon_logo.svg/200px-Amazon_logo.svg.png"

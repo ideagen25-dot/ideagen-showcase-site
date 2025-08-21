@@ -26,8 +26,8 @@ const Header = () => {
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
         <div className="flex items-center space-x-2">
           <img 
-            src="/lovable-uploads/3df8563b-c56b-4e4d-883b-f16d0204405c.png" 
-            alt="Idea Gen Technologies Logo" 
+            src="/lovable-uploads/b4dfa061-68c1-4e57-8f96-b61f3ce7cffa.png" 
+            alt="The Idea Gen Technologies Logo" 
             className="h-10 w-auto"
           />
         </div>

@@ -34,9 +34,9 @@ const Workshops = () => {
     "IIT Madras",
     "IIT Tirupati", 
     "IIT Kharagpur",
-    "SVRMC Nagarm",
-    "NIT Warangal",
-    "IIIT Hyderabad"
+    "NIT WARANGAL",
+    "SVCE Tirupati",
+    "SVRMC Nagaram"
   ];
 
   const technologies = [

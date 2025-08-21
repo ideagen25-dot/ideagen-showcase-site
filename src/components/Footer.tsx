@@ -1,4 +1,5 @@
 import { Badge } from '@/components/ui/badge';
+import { Instagram } from 'lucide-react';
 
 const Footer = () => {
   const scrollToSection = (sectionId: string) => {
@@ -62,12 +63,17 @@ const Footer = () => {
           </div>
 
           <div>
-            <h3 className="font-semibold mb-4">Services</h3>
-            <div className="space-y-2 text-background/80">
-              <div>Workshops & Training</div>
-              <div>Internships</div>
-              <div>Corporate Solutions</div>
-              <div>Project Collaborations</div>
+            <h3 className="font-semibold mb-4">Follow Us</h3>
+            <div className="space-y-2">
+              <a 
+                href="https://www.instagram.com/theideagentechnologies/?hl=en"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center space-x-2 text-background/80 hover:text-background transition-colors"
+              >
+                <Instagram className="w-4 h-4" />
+                <span>Instagram</span>
+              </a>
             </div>
           </div>
         </div>
