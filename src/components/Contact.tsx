@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
-import { Mail, Phone, MapPin, Send, Linkedin, Twitter, Facebook } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, Linkedin, Instagram } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 
 const Contact = () => {
@@ -157,12 +157,15 @@ Message: ${formData.message}`);
                       <Linkedin className="w-4 h-4" />
                     </Button>
                   </a>
-                  <Button variant="outline" size="icon" className="hover:bg-primary hover:text-white">
-                    <Twitter className="w-4 h-4" />
-                  </Button>
-                  <Button variant="outline" size="icon" className="hover:bg-primary hover:text-white">
-                    <Facebook className="w-4 h-4" />
-                  </Button>
+                  <a 
+                    href="https://www.instagram.com/theideagentechnologies/?hl=en" 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Button variant="outline" size="icon" className="hover:bg-primary hover:text-white">
+                      <Instagram className="w-4 h-4" />
+                    </Button>
+                  </a>
                 </div>
               </CardContent>
             </Card>
