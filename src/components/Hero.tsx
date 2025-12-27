@@ -19,10 +19,10 @@ const Hero = () => {
   };
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
+    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-24 md:pt-28">
       <div className="absolute inset-0 bg-gradient-hero opacity-10"></div>
       
-      <div className="container mx-auto px-6 text-center z-10 animate-fade-in">
+      <div className="container mx-auto px-6 text-center z-10 animate-fade-in mt-8 md:mt-0">
         <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
           <span className="text-foreground">Empower your business with</span>
           <br />
