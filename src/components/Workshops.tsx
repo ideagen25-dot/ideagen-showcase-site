@@ -73,6 +73,9 @@ const Workshops = () => {
             <div className="flex animate-scroll space-x-6">
               {/* First set of workshops */}
               {[
+                "/lovable-uploads/workshop-iith1.jpeg",
+                "/lovable-uploads/workshop-iith2.jpeg",
+                "/lovable-uploads/workshop-iith3.jpeg",
                 "/lovable-uploads/78403021-7dbd-4f1d-ab34-f857c13ec4cc.png",
                 "/lovable-uploads/a2ce7e8f-17b5-45e9-a1c5-88e303740fce.png", 
                 "/lovable-uploads/b2d4bbd2-8c99-4ae1-ab5b-e9047238eb8e.png",
@@ -91,6 +94,9 @@ const Workshops = () => {
               ))}
               {/* Duplicate set for seamless loop */}
               {[
+                "/lovable-uploads/workshop-iith1.jpeg",
+                "/lovable-uploads/workshop-iith2.jpeg",
+                "/lovable-uploads/workshop-iith3.jpeg",
                 "/lovable-uploads/78403021-7dbd-4f1d-ab34-f857c13ec4cc.png",
                 "/lovable-uploads/a2ce7e8f-17b5-45e9-a1c5-88e303740fce.png", 
                 "/lovable-uploads/b2d4bbd2-8c99-4ae1-ab5b-e9047238eb8e.png",
