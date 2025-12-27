@@ -31,12 +31,14 @@ const Workshops = () => {
   ];
 
   const institutions = [
+    "IIT Hyderabad",
     "IIT Madras",
     "IIT Tirupati", 
     "IIT Kharagpur",
-    "NIT WARANGAL",
+    "NIT Warangal",
     "SVCE Tirupati",
-    "SVRMC Nagaram"
+    "SVRMC Nagaram",
+    "KVR & MKR Degree College"
   ];
 
   const technologies = [
