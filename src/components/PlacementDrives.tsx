@@ -10,7 +10,7 @@ const PlacementDrives = () => {
     },
     {
       name: "KVR & MKR Degree College",
-      logo: "/lovable-uploads/svrmc-logo.jpeg",
+      logo: "/lovable-uploads/kvr-logo.jpg",
       studentsPlaced: "120+"
     },
     {
